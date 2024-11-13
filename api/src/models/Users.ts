@@ -23,9 +23,6 @@ const UserSchema = new Schema<IUser>({
         type:String,
         required:true
     }
-    
-}
-
-)
+    },{timestamps:true})
 
 export const UserModel = model<IUser>('users',UserSchema);
